@@ -40,21 +40,25 @@ const App = () => {
           <div>
             <Routes>
               {/* Dashboard */}
+              
               <Route path = '/' element = 'Dashboard' />
               <Route path = '/ecommerce' />
 
               {/* Pages */}
+
               <Route path = '/orders' element = 'Orders' />
               <Route path = '/employees' element = 'Employees' />
               <Route path = '/customers' element = 'Customers' />
 
               {/* Apps */}
+
               <Route path = '/kanban' element = 'Kanban' />
               <Route path = '/editor' element = 'Editor' />
               <Route path = '/calendar' element = 'Calendar' />
               <Route path = '/color-picker' element = 'ColorPicker' />
 
               {/* Charts */}
+
               <Route path = '/line' element = 'Line' />
               <Route path = '/area' element = 'Area' />
               <Route path = '/bar' element = 'Bar' />
