@@ -5,9 +5,12 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { NavigationBar, Footer, SideBar, ThemeSettings } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, LineChart, Kanban, Finance} from './pages';
 import './styling/App.css';
+import { useStateContext } from './contexts/ContextProvider';
 
 const App = () => {
-  const activeMenu = true;
+
+  const  { activeMenu } = useStateContext()   // implements context api on the sidebar for the entire app
+
   return (
     <div>
 
