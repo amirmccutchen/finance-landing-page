@@ -3,13 +3,16 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { NavigationBar, Footer, SideBar, ThemeSettings } from './components';
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor} from './pages';
+import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, LineChart, Kanban, Finance} from './pages';
 import './styling/App.css';
 
 const App = () => {
   const activeMenu = true;
   return (
     <div>
+
+      {/* settings button */}
+
       <BrowserRouter>
         <div className = 'flex relative dark:bg-main-dark-bg'>
           <div className = 'fixed right-4 bottom-4' style={{ zIndex: '1000' }}>
@@ -22,6 +25,9 @@ const App = () => {
               </button>
             </TooltipComponent>
           </div>
+
+          {/* sidebar */}
+
           {activeMenu ? (
             <div className = 'w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
               <SideBar />
@@ -43,7 +49,7 @@ const App = () => {
             <Routes>
               {/* Dashboard */}
               
-              <Route path = '/' element = {<Dashboard />} />
+              <Route path = '/' element = {<Ecommerce />} />
               <Route path = '/ecommerce' element = {<Ecommerce />} />
 
               {/* Pages */}
@@ -61,7 +67,7 @@ const App = () => {
 
               {/* Charts */}
 
-              <Route path = '/line' element = {<Line />} />
+              <Route path = '/line' element = {<LineChart />} />
               <Route path = '/area' element = {<Area />} />
               <Route path = '/bar' element = {<Bar />} />
               <Route path = '/pie' element = {<Pie />} />
