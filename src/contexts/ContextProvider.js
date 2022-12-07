@@ -12,6 +12,7 @@ const initialState = {
 };
 
 export const ContextProvider = ( { children } ) => {
+
     const [activeMenu, setActiveMenu] = useState(true);
 
     // handleClick is for navbar buttons, handles the clicked/unclicked state of the button and adjusts content accordingly
@@ -22,6 +23,8 @@ export const ContextProvider = ( { children } ) => {
         setIsClicked({ ...initialState, [clicked]: true });
     }
 
+    const [screenSize, setScreenSize] = useState(undefined)
+
     return (
         <StateContext.Provider
         value = {{ 
@@ -30,6 +33,8 @@ export const ContextProvider = ( { children } ) => {
             isClicked,
             setIsClicked,
             handleClick,
+            screenSize,
+            setScreenSize,
         }}>
             {children}
         </StateContext.Provider>

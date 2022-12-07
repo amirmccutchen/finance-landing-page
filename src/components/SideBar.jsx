@@ -7,7 +7,14 @@ import { links } from '../data/sampleData';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const SideBar = () => {
-  const { activeMenu, setActiveMenu } = useStateContext();
+
+  const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+
+  // closing sidebar for link clicks & returning to the home page
+
+  function handleCloseSideBar() {
+    if (activeMenu && screenSize <= 900) setActiveMenu(false);
+  }
 
   // link status styling
 
@@ -19,7 +26,7 @@ const SideBar = () => {
     <div className = 'ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10'>
       {activeMenu && (<>
         <div className = 'flex justify-between items-center'>
-          <Link to = '/' onClick = {() => {setActiveMenu(false)}} className = 'items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-gray-900'>
+          <Link to = '/' onClick = {handleCloseSideBar()} className = 'items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-gray-900'>
             <SiShopware /> <span>Amir McCutchen</span>
           </Link>
           <TooltipComponent 
@@ -46,7 +53,7 @@ const SideBar = () => {
                 <NavLink
                 to = {`/${url.name}`}
                 key = {url.name}
-                onClick = {() => {}}
+                onClick = {handleCloseSideBar()}
                 className = {({ isActive }) => isActive ? activeLink : normalLink}>
                   {url.icon}
                   <span className = 'capitalize'>
