@@ -1500,7 +1500,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-      avatar3,
+      avatar2,
   },
   {
     EmployeeID: 3,
@@ -2127,7 +2127,7 @@ export const ordersData = [
     CustomerName: 'Vinet',
 
     TotalAmount: 32.38,
-    OrderItems: 'Fresh Tomato',
+    OrderItems: 'Fresh Tomatoes',
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
@@ -2193,7 +2193,7 @@ export const ordersData = [
     OrderID: 944895,
     CustomerName: 'Lulia albu',
     TotalAmount: 17.99,
-    OrderItems: 'Skincare',
+    OrderItems: 'Watches',
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
