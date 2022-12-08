@@ -505,7 +505,7 @@ export const links = [
         icon: <AiOutlineCalendar />,
       },
       {
-        name: 'kanban',
+        name: 'trello',
         icon: <BsKanban />,
       },
       {
