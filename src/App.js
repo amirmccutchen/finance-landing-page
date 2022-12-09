@@ -6,10 +6,11 @@ import { NavigationBar, Footer, SideBar, ThemeSettings } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, LineChart, Kanban, Finance} from './pages';
 import './styling/App.css';
 import { useStateContext } from './contexts/ContextProvider';
+import { Theme } from '@syncfusion/ej2-react-charts';
 
 const App = () => {
 
-  const  { activeMenu } = useStateContext()   // implements context api on the sidebar for the entire app
+  const  { activeMenu, themeSettings, setThemeSettings } = useStateContext()   // implements context api on the sidebar for the entire app
 
   return (
     <div>
@@ -23,7 +24,8 @@ const App = () => {
               <button 
               type = 'button'
               className = 'text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
-              style={{ background: 'blue', borderRadius: '50%' }}>
+              style={{ background: 'blue', borderRadius: '50%' }}
+              onClick = {() => setThemeSettings(true)}>
                 <FiSettings />
               </button>
             </TooltipComponent>
@@ -48,6 +50,9 @@ const App = () => {
               </div>
 
           <div>
+
+            {themeSettings && <ThemeSettings />}
+
             <Routes>
               {/* Dashboard */}
               
