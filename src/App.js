@@ -10,13 +10,12 @@ import { Theme } from '@syncfusion/ej2-react-charts';
 
 const App = () => {
 
-  const  { activeMenu, themeSettings, setThemeSettings } = useStateContext()   // implements context api on the sidebar for the entire app
+  const  { activeMenu, themeSettings, setThemeSettings, currentColor, currentMode} = useStateContext()   // implements context api on the sidebar for the entire app
 
   return (
-    <div>
+    <div className = {currentMode === 'Dark' ? 'dark' : ''}>
 
       {/* settings button */}
-
       <BrowserRouter>
         <div className = 'flex relative dark:bg-main-dark-bg'>
           <div className = 'fixed right-4 bottom-4' style={{ zIndex: '1000' }}>
@@ -24,7 +23,7 @@ const App = () => {
               <button 
               type = 'button'
               className = 'text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
-              style={{ background: 'blue', borderRadius: '50%' }}
+              style={{ background: currentColor, borderRadius: '50%' }}
               onClick = {() => setThemeSettings(true)}>
                 <FiSettings />
               </button>
@@ -43,7 +42,7 @@ const App = () => {
             </div>
           )}
           <div className = {
-            `dark:bg-main-bg bg-main-bg min-h-screen w-full ${ activeMenu ? 'md:ml-72' : 'flex-2' }`
+            `dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${ activeMenu ? 'md:ml-72' : 'flex-2' }`
             }>
               <div className = 'fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
                 <NavigationBar />
@@ -66,8 +65,7 @@ const App = () => {
               <Route path = '/customers' element = {<Customers />} />
 
               {/* Apps */}
-
-              <Route path = '/kanban' element = {<Kanban />} />
+              
               <Route path = '/editor' element = {<Editor />} />
               <Route path = '/calendar' element = {<Calendar />} />
               <Route path = '/color-picker' element = {<ColorPicker />} />

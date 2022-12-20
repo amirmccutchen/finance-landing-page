@@ -8,7 +8,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 const SideBar = () => {
 
-  const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+  const { activeMenu, setActiveMenu, screenSize, currentColor } = useStateContext();
 
   // closing sidebar for link clicks & returning to the home page
 
@@ -54,6 +54,13 @@ const SideBar = () => {
                 to = {`/${url.name}`}
                 key = {url.name}
                 onClick = {handleCloseSideBar()}
+
+                // shows user which page they are on (highlighted on sidebar)
+
+                style = {({ isActive }) => ({
+                  backgroundColor: isActive ? currentColor : ''
+                })}
+                
                 className = {({ isActive }) => isActive ? activeLink : normalLink}>
                   {url.icon}
                   <span className = 'capitalize'>
