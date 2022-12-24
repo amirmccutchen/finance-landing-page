@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { NavigationBar, Footer, SideBar, ThemeSettings } from './components';
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, LineChart, Kanban, Finance} from './pages';
+import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, LineChart, Finance} from './pages';
 import './styling/App.css';
 import { useStateContext } from './contexts/ContextProvider';
 import { Theme } from '@syncfusion/ej2-react-charts';
@@ -65,7 +65,7 @@ const App = () => {
               <Route path = '/customers' element = {<Customers />} />
 
               {/* Apps */}
-              
+
               <Route path = '/editor' element = {<Editor />} />
               <Route path = '/calendar' element = {<Calendar />} />
               <Route path = '/color-picker' element = {<ColorPicker />} />
