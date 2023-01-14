@@ -4,6 +4,8 @@ import styles, { layout } from "../style";
 const appleStore = `https://www.apple.com/app-store/`
 const googlePlay = `https://play.google.com/store/apps`
 
+// billing and invoicing summary section
+
 const Billing = () => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
