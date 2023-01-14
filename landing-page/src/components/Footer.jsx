@@ -26,7 +26,7 @@ const Footer = () => (
               {footerlink.links.map((link, index) => (
                 <li
                   key={link.name}
-                  className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
+                  className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-teal-200 cursor-pointer ${
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
@@ -44,13 +44,14 @@ const Footer = () => (
         Ⓒ 2022 SecureFi. Built with React and Tailwind by Amir McCutchen.
       </p>
 
+      {/* mapping sm icons */}
       <div className="flex flex-row md:mt-0 mt-6">
         {socialMedia.map((social, index) => (
           <img
             key={social.id}
             src={social.icon}
             alt={social.id}
-            className={`w-[21px] h-[21px] object-contain cursor-pointer ${
+            className={`w-[21px] h-[21px] object-contain cursor-pointer hover:bg-teal-200 ${
               index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
             }`}
             onClick={() => window.open(social.link)}

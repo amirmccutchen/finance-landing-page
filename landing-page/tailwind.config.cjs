@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     ripple: theme => ({
       colors: theme('colors'),
-      darken: 0.3
+      darken: 0.33
   }),
     extend: {
       colors: {

@@ -20,7 +20,7 @@ const Navigation = () => {
         {navigationLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-teal-200 ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navigationLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => nav.id != 'repo' ? setActive(nav.title) : window.open(url, '_blank')}
