@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { close, menu } from "../assets";
-import { navLinks } from "../data";
+import { navigationLinks } from "../data";
 
 const Navigation = () => {
   const [active, setActive] = useState("Home");
@@ -9,10 +9,12 @@ const Navigation = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
+      {/*src logo here*/}
+
       <img alt="securefi" className="w-[124px] h-[32px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((nav, index) => (
+        {navigationLinks.map((nav, index) => (
           <li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
