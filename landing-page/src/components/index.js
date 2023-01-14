@@ -7,7 +7,7 @@ import CTA from "./CTA";
 import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
-import Hero from "./Hero";
+import Intro from "./Intro";
 
 export {
   Navigation,
@@ -19,5 +19,5 @@ export {
   Stats,
   Footer,
   Testimonials,
-  Hero,
+  Intro,
 };
