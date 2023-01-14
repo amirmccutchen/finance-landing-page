@@ -47,29 +47,29 @@ export const features = [
   },
 ];
 
-export const feedback = [
+export const testimonials = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+      "I have been using SecureFi for all my online transactions for the past year and I am extremely satisfied with their service. The platform is user-friendly and the transactions are always processed quickly and securely.",
     name: "Herman Jensen",
-    title: "Founder & Leader",
+    title: "Founder & CTO, NextPay",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Beware of little expenses; a small leak will sink a great ship.",
+      "As a small business owner, security is of the utmost importance when it comes to accepting payments. That's why I trust SecureFi for all my payment processing needs.",
     name: "Steve Mark",
-    title: "Founder & Leader",
+    title: "Founder & CEO, PayGuard",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "Money is a terrible master but an excellent servant.",
+      "I've been using SecureFi for all my payments and it's the best decision I've made so far. The platform is easy to use, transactions are processed quickly and the customer service is excellent.",
     name: "Kenn Gallagher",
-    title: "Founder & Leader",
+    title: "Founder & Leader, PayMate",
     img: people03,
   },
 ];
