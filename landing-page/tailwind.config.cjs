@@ -3,6 +3,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   mode: "jit",
   theme: {
+    ripple: theme => ({
+      colors: theme('colors'),
+      darken: 0.3
+  }),
     extend: {
       colors: {
         primary: "#00040f",
@@ -23,5 +27,7 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-ripple')()
+  ],
 };
