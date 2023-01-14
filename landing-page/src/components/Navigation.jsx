@@ -7,6 +7,8 @@ const Navigation = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
+  const url = `https://github.com/amirmccutchen/finance-landing-page`;
+
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       {/*src logo here*/}
@@ -21,7 +23,7 @@ const Navigation = () => {
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navigationLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
+            onClick={() => nav.id != 'repo' ? setActive(nav.title) : window.open(url, '_blank')}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>

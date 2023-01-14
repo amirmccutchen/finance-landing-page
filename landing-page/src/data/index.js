@@ -17,6 +17,10 @@ export const navigationLinks = [
     id: "clients",
     title: "Clients",
   },
+  {
+    id: 'repo',
+    title: 'Repository',
+  }
 ];
 
 export const features = [
