@@ -10,8 +10,9 @@ const Navigation = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       {/*src logo here*/}
-
       <img alt="securefi" className="w-[124px] h-[32px]" />
+
+      {/* PC */}
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navigationLinks.map((nav, index) => (
@@ -35,6 +36,8 @@ const Navigation = () => {
           onClick={() => setToggle(!toggle)}
         />
 
+        {/* mobile */}
+        
         <div
           className={`${
             !toggle ? "hidden" : "flex"
