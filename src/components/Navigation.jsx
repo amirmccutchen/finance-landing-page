@@ -11,7 +11,9 @@ const Navigation = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      {/*src logo here*/}
+
+      {/* logo here */}
+
       <img src={logo} alt="securefi" className="w-[130px] h-[42px] cursor-pointer" />
 
       {/* PC */}
@@ -39,7 +41,7 @@ const Navigation = () => {
         />
 
         {/* mobile */}
-        
+
         <div
           className={`${
             !toggle ? "hidden" : "flex"
@@ -52,7 +54,7 @@ const Navigation = () => {
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navigationLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => nav.id != 'repo' ? setActive(nav.title) : window.open(url, '_blank')}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
