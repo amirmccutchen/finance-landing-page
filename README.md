@@ -2,7 +2,7 @@
 
 # SecureFi Landing Page
 
-Welcome to the SecureFi Landing Page repository! We are an emerging Fintech Company that specializes in credit recommendations for individuals, and payment processing for businesses. 
+Welcome to the SecureFi! We are an emerging Fintech that specializes in credit recommendations for individuals, and payment processing for businesses. 
 
 ## Features
 - The website is built with React, using Hooks and State Management for a smooth and responsive experience.
