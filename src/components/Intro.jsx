@@ -1,6 +1,7 @@
 import styles from "../style";
 import { discount, robot } from "../assets";
 import GetStarted from "./GetStarted";
+import { memo } from 'react';
 
 const Intro = () => {
   return (
