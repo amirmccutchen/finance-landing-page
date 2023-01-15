@@ -2,12 +2,12 @@
 
 # SecureFi Landing Page
 
-Welcome to the SecureFi Landing Page repository! This project is a mock home web page for a Fintech Company that specializes in credit recommendations for individuals, and payment processing for businesses. 
+Welcome to the SecureFi Landing Page repository! We are an emerging Fintech Company that specializes in credit recommendations for individuals, and payment processing for businesses. 
 
 ## Features
-- Built with React Hooks, State Management, and mobile-first development for a responsive and easy to navigate page.
-- Modern UI/UX design that puts the user first and is easy to use while also intriguing to look at.
-- Implemented industry best practices with React folder and file/component structure, as well as added comments for easy to understand and readable code.
+- The website is built with React, using Hooks and State Management for a smooth and responsive experience.
+- Modern UI/UX is modern, user-friendly, visually appealing, and easy to navigate.
+- The code is structured and organized, following industry best practices and commented for clarity and maintainability.
 
 ## Technology Stack
 - JavaScript
