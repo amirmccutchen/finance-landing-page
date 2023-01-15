@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { logo } from "../assets";
 import { close, menu } from "../assets";
 import { navigationLinks } from "../data";
 
@@ -12,7 +12,7 @@ const Navigation = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       {/*src logo here*/}
-      <img alt="securefi" className="w-[124px] h-[32px]" />
+      <img src={logo} alt="securefi" className="w-[130px] h-[42px] cursor-pointer" />
 
       {/* PC */}
 

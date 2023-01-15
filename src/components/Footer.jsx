@@ -1,6 +1,13 @@
 import styles from "../style";
-// import { logo } from "../assets";
+import { logo } from "../assets";
 import { footerLinks, socialMedia } from "../data";
+
+const scrollToTop = () =>{
+  window.scrollTo({
+    top: 0, 
+    behavior: 'smooth'
+  });
+};
 
 const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
@@ -8,8 +15,10 @@ const Footer = () => (
       <div className="flex-[1] flex flex-col justify-start mr-10">
         {/*srclogo*/}
         <img
+          src={logo}
           alt="securefi"
-          className="w-[266px] h-[72.14px] object-contain"
+          className="w-[142px] h-[60px] object-contain cursor-pointer"
+          onClick={scrollToTop}
         />
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
           The new way to make the payments easy, reliable and secure.
