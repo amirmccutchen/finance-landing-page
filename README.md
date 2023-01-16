@@ -27,6 +27,3 @@ You can view the deployed app here: https://securefi.vercel.app/
 
 ## Contributing
 If you want to contribute to this project, please feel free to submit a pull request!
-
-## License
-This project is licensed under the [MIT License](https://github.com/amirmccutchen/securefi-landing-page/blob/master/LICENSE)
