@@ -6,7 +6,7 @@ Welcome to the SecureFi! We are an emerging Fintech that specializes in credit r
 
 ## Features
 - The website is built with React, using Hooks and State Management for a smooth and responsive experience.
-- Modern UI/UX is modern, user-friendly, visually appealing, and easy to navigate.
+- Modern UI/UX is user-friendly, visually appealing, and easy to navigate.
 - The code is structured and organized, following industry best practices and commented for clarity and maintainability.
 
 ## Technology Stack
@@ -27,6 +27,3 @@ You can view the deployed app here: https://securefi.vercel.app/
 
 ## Contributing
 If you want to contribute to this project, please feel free to submit a pull request!
-
-## License
-This project is licensed under the [MIT License](https://github.com/amirmccutchen/securefi-landing-page/blob/master/LICENSE)
