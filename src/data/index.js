@@ -126,7 +126,7 @@ export const footerLinks = [
         link: "https://www.securefi.com/help-center/",
       },
       {
-        name: "Partners",
+        name: "Partnerships",
         link: "https://www.securefi.com/partners/",
       },
       {
@@ -144,10 +144,10 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Partner",
+    title: "Partners",
     links: [
       {
-        name: "Our Partner",
+        name: "Our Partners",
         link: "https://www.securefi.com/our-partner/",
       },
       {
