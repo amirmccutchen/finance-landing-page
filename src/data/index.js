@@ -138,13 +138,13 @@ export const footerLinks = [
         link: "https://www.securefi.com/blog/",
       },
       {
-        name: "Newsletters",
-        link: "https://www.securefi.com/newsletters/",
+        name: "Newsletter",
+        link: "https://www.securefi.com/newsletter/",
       },
     ],
   },
   {
-    title: "Partners",
+    title: "Partnership",
     links: [
       {
         name: "Our Partners",
